@@ -28,3 +28,10 @@ primary key (id)
 order by (id,create_time);
 ```
 
+# clickhouse docker部署脚本
+environmnet/clickhouse/clickhouse.md
+
+# app docker部署脚本
+app/docker-compose/docker-compose-app-withenv.command.md
+
+需要自己填写私密信息
