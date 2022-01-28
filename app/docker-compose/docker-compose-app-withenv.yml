@@ -1,6 +1,6 @@
 version: '3'
 services:
-  admin-server:
+  server:
     image: includeno/mybatis-plus-clickhouse
     container_name: mybatis-plus-clickhouse-container
     ports:

@@ -1,6 +1,6 @@
 # dockercompose command for app
 
-root /
+cd app/docker-compose
 
 ## pull
 ```
@@ -14,9 +14,9 @@ docker-compose --env-file app.env -f docker-compose-app-withenv.yml  up -d
 
 ## inspect
 ```
-docker-compose -f docker-compose-app-withenv.yml logs admin-server
+docker-compose -f docker-compose-app-withenv.yml logs server
 
-docker-compose -f docker-compose-app-withenv.yml logs -f admin-server
+docker-compose -f docker-compose-app-withenv.yml logs -f server
 
 ```
 
