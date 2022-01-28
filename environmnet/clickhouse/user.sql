@@ -1,16 +1,3 @@
-# spring-boot-clickhouse
-mybatis-plus结合clickhouse
-
-# 环境 
-```
-springboot 2.3.12.RELEASE
-clickhouse 21.11.11.1
-mybatis-plus
-```
-
-# clickhouse 数据库表
-environmnet/clickhouse/user.sql
-```
 -- auto-generated definition
 create table user
 (
@@ -26,5 +13,3 @@ engine = MergeTree
 partition by toYYYYMMDD(partition)
 primary key (id)
 order by (id,create_time);
-```
-

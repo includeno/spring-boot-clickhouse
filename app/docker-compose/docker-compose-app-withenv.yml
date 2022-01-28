@@ -1,0 +1,11 @@
+version: '3'
+services:
+  admin-server:
+    image: includeno/mybatis-plus-clickhouse
+    container_name: mybatis-plus-clickhouse-container
+    ports:
+      - "8080:8080"
+    environment:
+      - clickhouse_url=${clickhouse_url}
+      - clickhouse_username=${clickhouse_username}
+      - clickhouse_password=${clickhouse_password}
